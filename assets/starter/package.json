@@ -1,0 +1,14 @@
+{
+  "name": "v2fun-dance-game",
+  "private": true,
+  "scripts": {
+    "build": "node build.cjs",
+    "start": "node serve.cjs"
+  },
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}

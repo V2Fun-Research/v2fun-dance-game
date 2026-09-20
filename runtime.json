@@ -1,0 +1,9 @@
+{
+  "name": "v2fun-dance-game",
+  "version": "0.1.0",
+  "status": "local-audit",
+  "python": ">=3.9",
+  "node": ">=18",
+  "three": "external; use one consistent package",
+  "motion_capture": "documented API workflow; no integrated client"
+}

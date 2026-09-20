@@ -1,0 +1,4 @@
+interface:
+  display_name: "V2Fun 劲舞团游戏"
+  short_description: "Create playable Three.js dance rhythm games from video motion"
+  default_prompt: "Use $v2fun-dance-game to guide me through choosing a video and rigged character or the defaults, reuse embedded animation when available, and explain optional hand capture and credit estimates before making my dance game."
