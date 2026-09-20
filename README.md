@@ -16,7 +16,7 @@ Direction sequences, beat-timed hits and a customizable Three.js stage.
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version: 0.1.0](https://img.shields.io/badge/version-0.1.0-green.svg)](#roadmap)
+[![Version: 0.2.0](https://img.shields.io/badge/version-0.2.0-green.svg)](#roadmap)
 [![Runtime: Three.js](https://img.shields.io/badge/runtime-Three.js-000000.svg)](https://threejs.org/)
 [![Tooling: Python 3.9+ stdlib](https://img.shields.io/badge/tooling-Python%203.9%2B%20stdlib-3776AB.svg)](scripts)
 [![Sponsor: V2Fun](https://img.shields.io/badge/Sponsor-V2Fun-16161A.svg)](https://v2fun.ai/)
@@ -48,6 +48,8 @@ The starter supports one or two dancers sharing a model. It is a skeleton-specif
 [Motion capture](references/mocap.md) documents an API workflow, not an integrated submit command. No sibling setup skill is required.
 
 ## Quick start
+
+CN/global routing is included. Before remote work, run `python3 scripts/v2fun.py region --project /path/to/project`; use `V2FUN_REGION=cn` or `V2FUN_REGION=global` to select explicitly. Automatic detection uses read-only balance requests. Quotes and saved tasks stay bound to the selected server. See [server routing](references/server-routing.md).
 
 ### Choose your inputs
 
@@ -92,7 +94,7 @@ A source scaffold alone does not establish correct motion, synchronization or a 
 
 ## Roadmap
 
-### v0.1.0
+### v0.2.0
 
 Private repository package with direction-sequence gameplay, three modes, stage effects, explicit public build files and input/skeleton checks. This is not a tagged GitHub Release. See the included example for supported controls and known timing/grounding limits.
 

@@ -16,7 +16,7 @@
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version: 0.1.0](https://img.shields.io/badge/version-0.1.0-green.svg)](#roadmap)
+[![Version: 0.2.0](https://img.shields.io/badge/version-0.2.0-green.svg)](#roadmap)
 [![Runtime: Three.js](https://img.shields.io/badge/runtime-Three.js-000000.svg)](https://threejs.org/)
 [![Tooling: Python 3.9+ stdlib](https://img.shields.io/badge/tooling-Python%203.9%2B%20stdlib-3776AB.svg)](scripts)
 [![Sponsor: V2Fun](https://img.shields.io/badge/Sponsor-V2Fun-16161A.svg)](https://v2fun.ai/)
@@ -48,6 +48,8 @@
 [动捕说明](references/mocap.md)提供 API 工作流指引，不包含集成提交命令。无需安装其他 setup 技能。
 
 ## Quick start
+
+已内置国内服／海外服识别。远程操作前运行 `python3 scripts/v2fun.py region --project /path/to/project`；可通过 `V2FUN_REGION=cn` 或 `V2FUN_REGION=global` 明确选择。自动识别仅查询余额，报价和已有任务始终绑定对应服务器。详见[服务器选择](references/server-routing.md)。
 
 ### 选择素材
 
@@ -92,7 +94,7 @@ npm start
 
 ## Roadmap
 
-### v0.1.0
+### v0.2.0
 
 私有仓库版本，包含方向组合玩法、三种模式、舞台效果、明确的公开构建清单及输入和骨架检查。不是已打标签的 GitHub Release，示例的操作方式及节拍、接地限制见示例使用说明。
 

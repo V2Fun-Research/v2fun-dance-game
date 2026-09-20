@@ -1,9 +1,17 @@
 {
   "name": "v2fun-dance-game",
-  "version": "0.1.0",
-  "status": "local-audit",
+  "version": "0.2.0",
+  "status": "released",
   "python": ">=3.9",
   "node": ">=18",
   "three": "external; use one consistent package",
-  "motion_capture": "documented API workflow; no integrated client"
+  "motion_capture": "region-aware client; capture submission remains an explicit documented workflow",
+  "setup_runtime_version": "1.1.0",
+  "capabilities": [
+    "cn-global-server-routing"
+  ],
+  "regions": [
+    "cn",
+    "global"
+  ]
 }

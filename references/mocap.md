@@ -1,11 +1,11 @@
 # Video motion capture
 
-Prefer existing BVH. This package documents a historical V2Fun API shape used in September 2026; it does not ship a submit command or certify the current service contract. Verify the current official contract or an available maintained client before a new paid call. Do not require a sibling setup skill.
+Prefer existing BVH. First run `python3 scripts/v2fun.py region --project /path/to/project` and follow [server routing](server-routing.md). The bundled client resolves CN/global servers; use `Client.binding()` in every saved task and quote. This package documents a historical V2Fun API shape used in September 2026; it does not ship a submit command or certify the current service contract. Verify the current official contract or an available maintained client before a new paid call. Do not require a sibling setup skill.
 
 Historical request:
 
 ```http
-POST https://api.v2fun.art/api/v1/videos/motion_detections
+POST {verified_base_url}/videos/motion_detections
 Authorization: Bearer <V2FUN_API_KEY from the execution environment>
 Content-Type: application/json
 ```
@@ -25,3 +25,5 @@ Use media currentTime as the master clock. Sample each person's BVH at media tim
 ## Body and hand choice
 
 Default NEW capture to body-only, with neutral/rest fingers. Offer body-plus-hands and display both current credit estimates plus the additional cost. Check finger bones before promising visible hand tracking. The historical turbo request above illustrates body capture; advanced hand capture historically used pro. Verify the current provider schema and rates before selecting a model; do not invent a hands=true parameter or hardcode a rate. Verify actual video segment duration, applicable billing granularity, balance and authorization. If no hand preference is supplied, retain body-only, but never treat that silence as authorization to spend. Existing matching captures, including the bundled default capture, are reused without a new paid submission. For an animated model with music-source video, do not invoke this route unless the user chose video motion over embedded animation.
+
+For manual capture submission, construct Client with the saved server binding, not an unbound default. Preserve that binding when refreshing signed downloads or adapting motion. The client does not implement capture authorization, quoting, or task recovery for you; retain the safeguards above.

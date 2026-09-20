@@ -22,7 +22,7 @@ Analyze music timing and calibrate the chart. Briefly summarize chosen model, mo
 
 ## Local package and defaults
 
-Use [starter setup](references/starter.md) and [scaffold.py](scripts/scaffold.py). The package includes a bind-pose default GLB and the local default video's existing capture/animated derivative; see [default asset scope](references/default-assets.md). The example HTML is directly playable. Python scaffolding is offline and standard-library-only; no sibling setup skill is required. Motion capture has documented API guidance, not an integrated submission/recovery CLI. A scaffold is not proof that a newly uploaded model is correctly retargeted.
+Use [starter setup](references/starter.md) and [scaffold.py](scripts/scaffold.py). The package includes a bind-pose default GLB and the local default video's existing capture/animated derivative; see [default asset scope](references/default-assets.md). The example HTML is directly playable. Python scaffolding is offline and standard-library-only; no sibling setup skill is required. Motion capture has documented API guidance, a bundled region-aware client, not an integrated capture submission/recovery CLI. A scaffold is not proof that a newly uploaded model is correctly retargeted.
 
 ## Load only relevant guidance
 
@@ -43,3 +43,7 @@ Example requests:
 - “Use this video and rigged GLB to make an Audition-style dance game.”
 - “Restyle this game for a blue-white concert and improve its lights and opening camera.”
 - “Replace the character, fix foot sliding and update the existing website.”
+
+## Server selection
+
+Before remote calls, follow [CN/global routing](references/server-routing.md). Run scripts/v2fun.py region with the task project; normalize Bearer input, verify the selected server, and report its name and balance. Never infer the server from language or key appearance. Bind all quotes, task records and recovery to that server; a paid API failure never authorizes cross-server failover. Missing credentials do not block local work.
